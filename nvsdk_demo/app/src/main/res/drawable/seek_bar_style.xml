@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>     
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">     
+  <!-- 背景图 -->
+   <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/play_back_seek_1"/>
+    <!-- 中 -->
+    <!--全部进度的背景图  -->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/play_back_seek_2" />
+    <!-- 已经经过的部分背景图 -->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/play_back_seek_3"/>     
+ </layer-list>

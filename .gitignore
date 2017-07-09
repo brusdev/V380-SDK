@@ -45,3 +45,12 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+.gradle
+/nvsdk_demo/local.properties
+/nvsdk_demo/.idea/workspace.xml
+/nvsdk_demo/.idea/libraries
+.DS_Store
+/nvsdk_demo/app/build
+/nvsdk_demo/build
+/nvsdk_demo/captures

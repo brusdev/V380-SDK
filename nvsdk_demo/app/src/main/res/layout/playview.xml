@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:weightSum="1"
+  >
+  
+    
+<RelativeLayout android:layout_width="match_parent" 
+        android:id="@+id/frameLayout2"
+        android:layout_height="0dip" 
+        android:layout_weight="1"
+        android:background="#edeffb">
+        
+
+ <!-- center area -->
+    <RelativeLayout
+        android:background="@null"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/relativeLayoutCenter"
+        >
+        
+          
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/playContainer"
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+ 
+        
+        <RelativeLayout
+               android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:id="@+id/playContainerParent1"
+        		android:orientation="horizontal" 
+        		android:background="@null"
+        		android:gravity="center">
+        		
+       	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:id="@+id/playContainer1background"
+		        android:orientation="horizontal" 
+		        android:background="#00FF00"
+		        android:visibility="gone"/>
+       	    
+       	     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:id="@+id/playContainer1"
+		        android:orientation="horizontal" 
+		        android:background="#000000"
+		        android:layout_margin="0dip"/>
+            
+            <ImageView android:layout_width="match_parent"
+                android:contentDescription="@null" 
+                android:layout_height="match_parent"
+                android:background="@null" 
+                android:gravity="center" 
+                android:layout_centerInParent="true"
+                android:id="@+id/close_but_0" 
+                android:visibility="gone"/>
+            
+             <ProgressBar 
+				android:id="@+id/spinner_0"  
+				android:layout_width="80dip"  
+			    android:layout_height="80dip" 
+			    android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				style="?android:attr/progressBarStyleLarge"
+			    android:visibility="gone" />
+             
+             <!-- 添加文字提示用户可以语音对讲了 -->
+             <LinearLayout android:id="@+id/llPlayTalkback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+                 android:gravity="center">
+             <TextView android:layout_width="fill_parent" android:layout_height="30dip"
+                 android:text="@string/voiceTalkback" android:textColor="#f41313" android:textSize="14sp"
+                 android:gravity="center" />
+             </LinearLayout>
+             <Button android:layout_width="128dip" 
+                android:layout_height="128dip"
+                android:background="@null" 
+                android:gravity="center" 
+                android:layout_centerInParent="true"
+                android:id="@+id/btnRepeat1" 
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+       	
+     
+ 
+          
+     </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolPTZ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:background="@null"
+            android:gravity="center" 
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+           
+            >
+ 
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:gravity="bottom|center_vertical"
+              android:orientation="horizontal"
+              android:layout_weight="3">
+			
+
+            </LinearLayout>
+            
+          
+			<LinearLayout android:layout_weight="1" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60dip" android:gravity="center" > 
+			         <RadioButton
+			             android:visibility="gone"
+			         android:id="@+id/rBtnVerticalAuto"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="垂直自动" 
+			         android:layout_marginRight="80dip"
+			         android:textColor="@color/font_color_white"
+			         android:checked="true"/>
+			
+			        <RadioButton
+			             android:visibility="gone"
+			         android:id="@+id/rBtnHorizontalAuto"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="水平自动" 
+			         android:textColor="@color/font_color_white"
+			         android:checked="false"/>
+			    </LinearLayout>
+			
+			
+		<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="90dip"
+              android:background="@null"
+              android:gravity="center"
+              android:orientation="horizontal"/>
+         </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layoutImageQL"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+             android:background="@null"
+            android:gravity="center|bottom" 
+            android:orientation="vertical"
+             android:layout_alignParentBottom="true"
+           
+            >
+			
+           
+				<RadioGroup android:id="@+id/rgLandscapeDefinition" android:visibility="gone" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="110dip" android:gravity="center" android:background="@drawable/server_bg" > 
+			         <RadioButton
+			         android:id="@+id/rBtnHD"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/btnHD" 
+			         android:layout_marginRight="80dip"
+			         android:textColor="@color/font_color_black"
+			         android:checked="true"/>
+			
+			        <RadioButton
+			         android:id="@+id/rBtnSmooth"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/standardDefinition" 
+			         android:textColor="@color/font_color_black"
+			         android:checked="false"/>
+			     </RadioGroup>
+			
+			<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="90dip"
+              android:background="@null"
+              android:gravity="center"
+              android:orientation="horizontal"/>
+         </LinearLayout>
+         <LinearLayout
+            android:id="@+id/MicroPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+             android:background="@null"
+            android:gravity="center|bottom" 
+            android:orientation="vertical"
+             android:layout_alignParentBottom="true"
+            >
+
+              <RelativeLayout
+                 android:id="@+id/ptzCtrlPanel"
+                 android:layout_width="180dip"
+                 android:layout_height="130dip"
+                 android:gravity="bottom|center"
+                  
+                  android:visibility="gone">
+
+              <Button
+                android:id="@+id/btnPTZLeft"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+             <Button
+                android:id="@+id/btnPTZRight"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+             <Button
+                android:id="@+id/btnPTZUP"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+             <Button
+                android:id="@+id/btnPTZDown"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:contentDescription="@null"
+                android:background="@null" 
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+              </RelativeLayout>
+             
+             
+             
+          <LinearLayout
+                  android:id="@+id/MicroPhoneLayoutBottom"
+              android:layout_width="match_parent"
+              android:layout_height="90dip"
+              android:background="@null"
+              android:gravity="bottom|center"
+              android:orientation="horizontal"
+              />
+              
+            
+  		
+	    </LinearLayout>
+	     
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="right|center" android:background="@null">
+          <LinearLayout android:id="@+id/llLandscapeDefinition" android:visibility="visible" android:layout_width="80dip" android:layout_height="80dip" android:background="@null" android:layout_gravity="right" android:orientation="vertical">
+                <Button android:id="@+id/btnSmooth" android:layout_width="match_parent" android:layout_height="40dip" android:text="@string/standardDefinition" android:textColor="@color/font_color_black" android:textSize="12sp"
+                    android:gravity="center" android:background="@null"  />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/background_gray" />
+                <Button android:id="@+id/btnHD" android:layout_width="match_parent" android:layout_height="40dip" android:text="@string/btnHD" android:textColor="@color/font_color_black" android:textSize="12sp"
+                    android:gravity="center" android:background="@null" />
+                </LinearLayout>
+         </LinearLayout>
+    </RelativeLayout>
+    
+     <!-- end of center area -->
+ 
+        
+         <!-- top -->
+        <LinearLayout
+        android:orientation="vertical" 
+         android:layout_width="match_parent"
+         android:layout_height="45dip"
+         android:visibility="visible"
+         android:id="@+id/linearLayoutTopBar" android:background="@drawable/background_title" android:layout_alignParentTop="true" >
+           <LinearLayout  android:orientation="horizontal"   android:layout_width="match_parent" android:layout_height="45dip"   android:background="@null">
+            <ImageView android:id="@+id/buttonBackToLogin" android:layout_width="50dip" android:layout_height="40dip" android:src="@drawable/back_btn" android:layout_gravity="center" android:contentDescription="@null" />
+           <TextView android:id="@+id/tvPlayDeviceID" android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="2" android:text="@string/videoPlaying" android:gravity="center" android:textColor="@color/font_color_white" />
+          	<ImageView android:id="@+id/btnPresetConfig" android:layout_width="50dip" android:layout_height="40dip" android:src="@drawable/ptzx_face" android:layout_gravity="center" android:contentDescription="@null" />
+           </LinearLayout>
+       
+           
+      </LinearLayout>
+      
+      <ImageView android:id="@+id/ivPresetLandscape" android:layout_width="70dip" android:layout_height="50dip" android:src="@drawable/ptzx_face" android:contentDescription="@null"
+           android:visibility="gone"/>
+      
+ 	<!-- end of top -->
+     
+   <!-- bootom -->
+   
+  <LinearLayout
+        android:id="@+id/linearLayoutBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center" >
+  <!--
+  <LinearLayout
+            android:id="@+id/bottomTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.15"
+            android:background="@drawable/list_top_bg"
+            android:gravity="center" 
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/chns_prev"
+                android:layout_width="50dip"
+                android:layout_height="70dip"
+                android:layout_marginRight="1.0dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/selector_btn_prev" />
+
+            
+            <LinearLayout
+                android:id="@+id/chn_panel"
+                android:layout_width="210dip"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/chn_1"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/chn_normal1"
+                    android:contentDescription="@null" />
+
+                <ImageButton
+                    android:id="@+id/chn_2"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/chn_normal2"
+                    android:contentDescription="@null" />
+
+                <ImageButton
+                    android:id="@+id/chn_3"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/chn_normal3"
+                    android:contentDescription="@null" />
+
+                <ImageButton
+                    android:id="@+id/chn_4"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/chn_normal4"
+                    android:contentDescription="@null" />
+                
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/chns_next"
+                android:layout_width="50dip"
+                android:layout_height="70dip"
+                android:layout_marginRight="1.0dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/selector_btn_next" />
+        </LinearLayout>
+
+ -->
+   
+           
+      
+  
+        <LinearLayout
+            android:id="@+id/llVertical"
+            android:visibility="visible"
+            android:baselineAligned="false"
+            android:layout_width="match_parent"
+            android:layout_height="90dip"
+            android:background="@null">
+	
+       
+           
+            <LinearLayout android:visibility="visible" android:id="@+id/layoutScreenShot"  android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonScreenShot" android:layout_width="50dip" android:layout_height="50dip" android:background="@drawable/play_back_candid_btn"  android:contentDescription="@null" />
+               <TextView android:layout_width="wrap_content" android:layout_height="25dip" android:text="@string/takeACabdidPhotograph" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="12dip"/>
+            </LinearLayout> 
+            
+            <LinearLayout android:visibility="visible"  android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonReverse" android:layout_width="50dip" android:layout_height="50dip" android:background="@drawable/play_inversion_btn" />
+            	<TextView android:layout_width="wrap_content" android:layout_height="25dip" android:text="@string/inversion" android:textColor="@color/font_color_black" android:textSize="12dip" android:gravity="center" />
+            </LinearLayout>  
+            
+            <LinearLayout android:id="@+id/layoutMicBtn"  android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonMic" android:layout_width="60dip" android:layout_height="60dip" android:contentDescription="@null" android:background="@drawable/play_talkback_btn" />
+               <TextView android:layout_width="wrap_content" android:layout_height="25dip" android:text="@string/talkback" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="12dip"/>
+            </LinearLayout>   
+             
+            <LinearLayout android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonSound" android:layout_width="50dip" android:layout_height="50dip" android:contentDescription="@null" android:background="@drawable/play_back_sound_btn" />
+            	<TextView android:layout_width="wrap_content" android:layout_height="25dip" android:text="@string/monitor" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="12dip"/>
+            </LinearLayout>
+              
+            <LinearLayout android:visibility="visible" android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"  android:orientation="vertical">
+                <Button android:id="@+id/buttonImageGQL" android:layout_width="50dip" android:layout_height="50dip" android:contentDescription="@null" android:background="@drawable/play_definition_btn" />
+               	<TextView android:layout_width="wrap_content" android:layout_height="25dip" android:text="@string/definition" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="12dip"/>
+            </LinearLayout>
+           
+         </LinearLayout>
+         
+        <LinearLayout
+            android:id="@+id/llLandscape"
+            android:visibility="gone"
+            android:baselineAligned="false"
+            android:layout_width="350dip"
+            android:layout_height="50dip"
+            android:background="@drawable/play_back_button_bg_alpha"
+            android:layout_marginBottom="5dip"
+            >
+	
+           <!--  <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/buttonBackToLogin" android:layout_width="40dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/close_play_btn_selector" />
+      
+            </LinearLayout> -->
+           <LinearLayout android:visibility="gone" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:layout_width="40dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/back_btn" />
+     			
+            </LinearLayout>
+           
+            <LinearLayout android:visibility="visible" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"  android:orientation="vertical">
+                <Button android:id="@+id/buttonBackToLogin2" android:layout_width="30dip" android:layout_height="30dip" android:contentDescription="@null" android:background="@drawable/paly_back_btn" />
+               	<TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/back" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="10dip"/>
+            </LinearLayout>
+           
+            <LinearLayout android:visibility="visible" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonScreenShot2" android:layout_width="30dip" android:layout_height="30dip" android:background="@drawable/play_back_candid_btn"  android:contentDescription="@null" />
+               <TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/takeACabdidPhotograph" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="10dip"/>
+            </LinearLayout> 
+            
+            <LinearLayout android:id="@+id/layoutMicBtn2"  android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonMic2" android:layout_width="30dip" android:layout_height="30dip" android:contentDescription="@null" android:background="@drawable/play_talkback_btn" />
+               <TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/talkback" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="10dip"/>
+            </LinearLayout>   
+            
+            <LinearLayout android:visibility="visible"  android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonReverse2" android:layout_width="30dip" android:layout_height="30dip" android:background="@drawable/play_inversion_btn" />
+            	<TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/inversion" android:textColor="@color/font_color_black" android:textSize="10dip" android:gravity="center" />
+            </LinearLayout>  
+            
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+                <Button android:id="@+id/buttonSound2" android:layout_width="30dip" android:layout_height="30dip" android:contentDescription="@null" android:background="@drawable/play_back_sound_btn" />
+            	<TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/monitor" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="10dip"/>
+            </LinearLayout>
+              
+            <LinearLayout android:visibility="gone" android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"  android:orientation="vertical">
+                <Button android:id="@+id/buttonImageGQL2" android:layout_width="30dip" android:layout_height="30dip" android:contentDescription="@null" android:background="@drawable/play_definition_btn" />
+               	<TextView android:visibility="gone" android:layout_width="30dip" android:layout_height="20dip" android:text="@string/definition" android:textColor="@color/font_color_black"  android:gravity="center" android:textSize="10dip"/>
+            </LinearLayout>
+           
+         </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    
+    
+</LinearLayout>

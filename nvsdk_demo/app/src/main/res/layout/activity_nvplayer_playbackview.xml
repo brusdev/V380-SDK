@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    
+    <RelativeLayout android:layout_width="fill_parent" 
+        android:id="@+id/frameLayout2"
+        android:layout_height="0dip" 
+        android:layout_weight="1"
+        android:background="@color/font_color_white">
+        
+
+ <!-- center area -->
+    <RelativeLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/relativeLayoutCenter">
+          
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:id="@+id/playbackContainer"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+          
+     
+           
+        <RelativeLayout
+               android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:id="@+id/playbackContainerParent1"
+        		android:orientation="horizontal" 
+        		android:background="@null"
+        		android:gravity="center">
+        		
+       	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:id="@+id/playbackContainer1background"
+		        android:orientation="horizontal" 
+		        android:background="#00FF00"
+		        android:visibility="gone"/>
+       	    
+       	     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:id="@+id/playbackContainer1"
+		        android:orientation="horizontal" 
+		        android:background="#000000"
+		        android:layout_margin="0dip"/>
+            
+            <ImageView android:layout_width="match_parent"
+                android:contentDescription="@null" 
+                android:layout_height="match_parent"
+                android:background="@null" 
+                android:gravity="center" 
+                android:layout_centerInParent="true"
+                android:id="@+id/close_but_0" 
+                android:visibility="gone"/>
+            
+             <ProgressBar 
+				android:id="@+id/spinner_0"  
+				android:layout_width="80dip"  
+			    android:layout_height="80dip" 
+			    android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				style="?android:attr/progressBarStyleLarge"
+			    android:visibility="gone" />
+             
+             <!-- 添加文字提示用户可以语音对讲了 -->
+             <LinearLayout android:id="@+id/llPlayTalkback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+                 android:gravity="center">
+             <TextView android:layout_width="fill_parent" android:layout_height="30dip"
+                 android:text="@string/voiceTalkback" android:textColor="#f41313" android:textSize="14sp"
+                 android:gravity="center" />
+             </LinearLayout>
+             <Button android:layout_width="128dip" 
+                android:layout_height="128dip"
+                android:background="@null" 
+                android:gravity="center" 
+                android:layout_centerInParent="true"
+                android:id="@+id/btnRepeat1" 
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+  	 
+          <!-- end of bootom play container -->
+     </LinearLayout>
+
+        
+    </RelativeLayout>
+    
+<!-- end of center area -->
+ 
+        
+         <!-- top -->
+      <LinearLayout
+        android:orientation="vertical" 
+         android:layout_width="match_parent"
+         android:layout_height="80dip"
+         android:id="@+id/linearLayoutTopBar"
+         
+          android:layout_alignParentTop="true"
+        >
+        <LinearLayout android:id="@+id/llVideoPalyBakc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45dip" android:orientation="horizontal"  android:background="@drawable/background_title">
+          <ImageView android:id="@+id/btnPBBackToLogin" android:layout_width="70dip" android:layout_height="40dip" android:src="@drawable/back_btn"
+              android:contentDescription="@null" android:layout_gravity="center" />
+          <TextView android:layout_width="0dip" android:layout_height="40dip" android:layout_weight="1" android:text="@string/VideoPlayBack" android:layout_gravity="center" android:gravity="center" android:textColor="@color/font_color_white" android:textSize="16sp" />
+          <ImageView android:layout_width="70dip" android:layout_height="35dip" android:contentDescription="@null"  />
+          <TextView android:visibility="gone" android:id="@+id/tvTopServer"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:text="@string/loading"
+             android:textColor="#FFFFFF"
+             android:textSize="16sp"/>
+          </LinearLayout>
+          
+          <!-- 横屏 -->
+         <LinearLayout android:id="@+id/llVideoPalyBakcHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30dip" android:orientation="horizontal"  android:background="@drawable/play_back_background_title">
+          <ImageView android:id="@+id/btnPBBackToLoginHprizontal" android:layout_width="70dip" android:layout_height="25dip" android:src="@drawable/back_btn" android:layout_gravity="center" android:contentDescription="@null" />
+          <TextView android:layout_width="0dip" android:layout_height="30dip" android:layout_weight="1" android:text="@string/VideoPlayBack" android:layout_gravity="center" android:gravity="center" android:textColor="@color/font_color_white" android:textSize="14sp" />
+          <ImageView android:layout_width="70dip" android:layout_height="35dip" android:contentDescription="@null"  />
+          <TextView android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:text="@string/loading"
+             android:textColor="@color/font_color_white"
+             android:textSize="16sp"/>
+          </LinearLayout>
+          
+         <LinearLayout android:id="@+id/llPlayerDevice" android:layout_width="fill_parent" android:layout_height="35dip" android:orientation="vertical" android:gravity="center" android:background="@drawable/play_back_button_bg_alpha">
+             <TextView android:id="@+id/tvPlayerDevice" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="14sp"
+                 android:textColor="@color/font_color_red" />
+         </LinearLayout> 
+        
+      </LinearLayout>
+ 	<!-- end of top -->
+     
+   <!-- bootom -->
+   <LinearLayout
+       android:visibility="visible"
+        android:id="@+id/linearLayoutBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center"
+     >
+ 
+        
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/bottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="170dip"
+            android:background="#FFFFFF" 
+            android:gravity="center"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+             
+          <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="70dip"
+          android:background="@null"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:layout_marginBottom="20dip" 
+          >
+             
+			<TextView android:id="@+id/tvStartTime" android:layout_width="60dip" android:layout_height="fill_parent" android:gravity="center" android:text="00:00:00" android:textColor="@color/font_color_black"
+			    android:textSize="12sp" />
+			        <SeekBar
+			            android:id="@+id/seekBarPlayProgress"
+			            android:layout_width="0dip"
+			            android:layout_weight="1"
+			            android:layout_height="wrap_content"
+			            android:minHeight="5dip"
+			            android:maxHeight="5dip"
+			            android:progressDrawable="@drawable/seek_bar_style"
+			            android:thumb="@drawable/seek_back_thumb"
+			            android:thumbOffset="15dip"
+			           />
+ 			<TextView android:id="@+id/tvStopTime" android:layout_width="60dip" android:layout_height="fill_parent" android:gravity="center" android:text="00:00:00" android:textColor="@color/font_color_black"
+			    android:textSize="12sp" />
+            </LinearLayout>
+            
+         
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="70dip" android:background="@drawable/play_back_button_bg_alpha" android:layout_gravity="bottom" android:baselineAligned="false" >
+    	     <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnCatpure" android:layout_width="55dip" android:layout_height="55dip" android:contentDescription="@null" android:background="@drawable/play_back_candid_btn" />
+      
+            </LinearLayout>
+            
+    	     <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnLastFlie" android:layout_width="55dip" android:layout_height="55dip" android:contentDescription="@null" android:background="@drawable/last_file_btn" />
+     
+            </LinearLayout>
+    	     
+           <LinearLayout android:gravity="center" android:layout_width="70dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnPBStopAndPlay" android:layout_width="65dip" android:layout_height="65dip" android:contentDescription="@null" android:background="@drawable/play_back_play_btn" />
+     
+            </LinearLayout>
+            
+           <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnNextFile" android:layout_width="55dip" android:layout_height="55dip" android:contentDescription="@null" android:background="@drawable/play_back_next_file_btn" />
+     
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnPBAudio" android:layout_width="55dip" android:layout_height="55dip" android:contentDescription="@null" android:background="@drawable/play_back_sound_btn" />
+            </LinearLayout>
+    	</LinearLayout>
+      	
+        </LinearLayout>
+        
+        <!-- 横屏 -->
+         <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/bottomButtonHorizontal"
+            android:layout_width="350dip"
+            android:layout_height="70dip"
+            android:background="@drawable/play_back_button_bg_alpha" 
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+        
+         <LinearLayout
+            android:id="@+id/bottomButton2"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null" 
+            android:gravity="center"
+            android:weightSum="5">
+             
+          <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dip"
+          android:background="@null"
+          android:gravity="center"
+          android:orientation="horizontal" 
+          >
+             
+			<TextView android:id="@+id/tvStartTimeHorizontal" android:layout_width="60dip" android:layout_height="fill_parent" android:gravity="center" android:text="00:00:00" android:textColor="@color/font_color_black"
+			    android:textSize="12sp" />
+			        <SeekBar
+			            android:id="@+id/seekBarPlayProgressHorizontal"
+			            android:layout_width="0dip"
+			            android:layout_weight="1"
+			            android:layout_height="wrap_content"
+			            android:minHeight="3dip"
+			            android:maxHeight="3dip"
+			            android:progressDrawable="@drawable/seek_bar_style"
+			            android:thumb="@drawable/seek_back_thumb"
+			            android:thumbOffset="10dip"
+			           />
+ 			<TextView android:id="@+id/tvStopTimeHorizontal" android:layout_width="60dip" android:layout_height="fill_parent" android:gravity="center" android:text="00:00:00" android:textColor="@color/font_color_black"
+			    android:textSize="12sp" />
+            </LinearLayout>
+            
+         </LinearLayout>
+      
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="40dip" android:layout_gravity="bottom" android:background="@null" android:baselineAligned="false" >
+    	    
+    	     <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnCatpureHorizontal" android:layout_width="35dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/play_back_candid_btn" />
+      
+            </LinearLayout>
+            
+    	     <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnLastFlieHorizontal" android:layout_width="35dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/last_file_btn" />
+     
+            </LinearLayout>
+    	     
+           <LinearLayout android:gravity="center" android:layout_width="70dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnPBStopAndPlayHorizontal" android:layout_width="35dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/play_back_play_btn" />
+     
+            </LinearLayout>
+            
+           <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnNextFileHorizontal" android:layout_width="35dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/play_back_next_file_btn" />
+     
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="60dip" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/btnPBAudioHorizontal" android:layout_width="35dip" android:layout_height="35dip" android:contentDescription="@null" android:background="@drawable/play_back_sound_btn" />
+            </LinearLayout>
+    	</LinearLayout>
+      	
+         
+    </LinearLayout>
+        
+      
+    </LinearLayout>
+ 
+        
+       
+    </RelativeLayout>
+
+    
+    
+</LinearLayout>

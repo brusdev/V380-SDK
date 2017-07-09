@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <!-- =====================通道的 PopupWindow Animation Style ============================ -->  
+   <style name="mypopwindow_anim_style">
+	   <item name="android:windowEnterAnimation">@anim/push_in</item>        <!-- 指定显示的动画xml  -->
+	   <item name="android:windowExitAnimation">@anim/push_out</item>       <!-- 指定消失的动画xml  -->
+   </style>
+</resources>  

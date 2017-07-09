@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"  
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+                       
+     <LinearLayout android:visibility="visible" android:gravity="center|left"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40dip" android:background="@drawable/date_time_title" > 
+          <TextView android:text="@string/date_current" android:textColor="@color/font_color_white" android:id="@+id/tvDateTimeTitle"  android:layout_width="fill_parent" android:layout_height="30dip" android:gravity="center" android:layout_gravity="center" />
+          <TextView android:visibility="gone" android:id="@+id/tvDateTimeCurrent" android:textColor="@color/font_color_white"  android:layout_width="match_parent" android:layout_height="30dip" android:text="--.--.--" android:gravity="center" android:textSize="16sp"/>
+	 </LinearLayout> 
+	    
+	 <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="170dip" android:background="@drawable/date_time" > 
+           
+	    <LinearLayout android:id="@+id/layoutDatePicker" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" > 
+	         <DatePicker android:layout_width="fill_parent" android:calendarViewShown="false" android:layout_height="wrap_content" android:id="@+id/mSelectDatePicker"/>
+	    </LinearLayout>
+ 
+	     <LinearLayout android:id="@+id/layoutTimePicker" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" > 
+	        <TimePicker   android:layout_width="fill_parent"  android:calendarViewShown="false" android:layout_height="wrap_content" android:id="@+id/mSelectTimePicker"/>
+	    </LinearLayout> 
+	    
+	   
+     </LinearLayout> 
+     
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:paddingLeft="10dip" 
+	    android:paddingRight="10dip" 
+	    android:background="@drawable/date_time_bottom"
+	    >
+
+		<Button
+		    android:id="@+id/btnDatetimeSelectCancel"
+		    android:layout_width="100dip"
+		    android:layout_height="40dip"
+		    android:background="@drawable/data_time_save_btn"
+		    android:gravity="center"
+		    android:text="@string/btn_cancel"
+		    android:layout_marginRight="10dip"
+		    android:textColor="#197cf6"
+		    android:textSize="16sp" />
+	 
+
+     <Button
+         android:id="@+id/btnDatetimeSelectOK"
+         android:layout_width="100dip"
+         android:layout_height="40dip"
+         android:background="@drawable/data_time_save_btn"
+         android:gravity="center"
+         android:text="@string/btn_ok"
+         android:textColor="#197cf6"
+         android:textSize="16sp" 
+         android:layout_marginLeft="10dip"/>
+
+	</LinearLayout>
+		 
+  
+</LinearLayout>

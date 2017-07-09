@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="CutPasteId">
+        <ignore path="src/com/macrovideo/v380/DeviceAPConnectActivity.java" />
+    </issue>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/macrovideo/icamsee1/DeviceManageActivity.java" />
+        <ignore path="src/com/macrovideo/wifi/ActWiFi.java" />
+    </issue>
+    <issue id="DrawAllocation">
+        <ignore path="src/com/stay/pull/lib/OnAndOff.java" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="SdCardPath">
+        <ignore path="src/com/macrovideo/icamsee1/NVPlayerPlayActivity.java" />
+        <ignore path="src/com/macrovideo/software/update/FileUtil.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/macrovideo/icamsee1/DeviceDeleteActivity.java" />
+        <ignore path="src/com/macrovideo/icamsee1/DeviceListViewFragment.java" />
+        <ignore path="src/com/macrovideo/icamsee1/DeviceManageActivity.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/com/macrovideo/icamsee1/DeviceRecordSettingFragment.java" />
+    </issue>
+</lint>

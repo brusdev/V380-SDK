@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="vertical" >
+    
+<LinearLayout android:layout_width="fill_parent" android:layout_height="49dip" android:orientation="horizontal">
+    <ImageView android:layout_width="60dip" android:layout_height="35dip" android:src="@drawable/device" android:layout_gravity="center" android:contentDescription="@null" />
+    <TextView android:id="@+id/tvDeviceSelect" android:layout_width="0dip" android:layout_weight="1" android:layout_height="35dip" android:textColor="@color/font_color_black" android:textSize="16sp" android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical" />
+    <ImageView android:id="@+id/ivDeviceSelect" android:layout_width="50dip" android:layout_height="35dip" android:src="@drawable/play_back_choose_btn" android:layout_gravity="left|center_vertical" android:contentDescription="@null"/>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:background="@color/background_gray"/>
+</LinearLayout>

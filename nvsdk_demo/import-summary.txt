@@ -1,0 +1,443 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .externalToolBuilders\
+* .externalToolBuilders\New_Builder.launch
+* obj\
+* obj\local\
+* obj\local\armeabi\
+* obj\local\armeabi\libavcodec.a
+* obj\local\armeabi\libavformat.a
+* obj\local\armeabi\libavutil.a
+* obj\local\armeabi\libffmpeg.so
+* obj\local\armeabi\libglesplayer.so
+* obj\local\armeabi\libmain.so
+* obj\local\armeabi\libpostproc.a
+* obj\local\armeabi\libstdc++.a
+* obj\local\armeabi\libswscale.a
+* obj\local\armeabi\libzerolink.so
+* obj\local\armeabi\objs\
+* obj\local\armeabi\objs\SDL2\
+* obj\local\armeabi\objs\SDL2\src\
+* obj\local\armeabi\objs\SDL2\src\SDL.o
+* obj\local\armeabi\objs\SDL2\src\SDL.o.d
+* obj\local\armeabi\objs\SDL2\src\SDL_assert.o
+* obj\local\armeabi\objs\SDL2\src\SDL_assert.o.d
+* obj\local\armeabi\objs\SDL2\src\SDL_error.o
+* obj\local\armeabi\objs\SDL2\src\SDL_error.o.d
+* obj\local\armeabi\objs\SDL2\src\SDL_fatal.o
+* obj\local\armeabi\objs\SDL2\src\SDL_fatal.o.d
+* obj\local\armeabi\objs\SDL2\src\SDL_hints.o
+* obj\local\armeabi\objs\SDL2\src\SDL_hints.o.d
+* obj\local\armeabi\objs\SDL2\src\SDL_log.o
+* obj\local\armeabi\objs\SDL2\src\SDL_log.o.d
+* obj\local\armeabi\objs\SDL2\src\atomic\
+* obj\local\armeabi\objs\SDL2\src\atomic\SDL_atomic.o
+* obj\local\armeabi\objs\SDL2\src\atomic\SDL_atomic.o.d
+* obj\local\armeabi\objs\SDL2\src\atomic\SDL_spinlock.o
+* obj\local\armeabi\objs\SDL2\src\atomic\SDL_spinlock.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audio.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audio.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiocvt.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiocvt.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiodev.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiodev.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiotypecvt.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_audiotypecvt.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_mixer.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_mixer.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_wave.o
+* obj\local\armeabi\objs\SDL2\src\audio\SDL_wave.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\android\
+* obj\local\armeabi\objs\SDL2\src\audio\android\SDL_androidaudio.o
+* obj\local\armeabi\objs\SDL2\src\audio\android\SDL_androidaudio.o.d
+* obj\local\armeabi\objs\SDL2\src\audio\dummy\
+* obj\local\armeabi\objs\SDL2\src\audio\dummy\SDL_dummyaudio.o
+* obj\local\armeabi\objs\SDL2\src\audio\dummy\SDL_dummyaudio.o.d
+* obj\local\armeabi\objs\SDL2\src\core\
+* obj\local\armeabi\objs\SDL2\src\core\android\
+* obj\local\armeabi\objs\SDL2\src\core\android\SDL_android.o
+* obj\local\armeabi\objs\SDL2\src\core\android\SDL_android.o.d
+* obj\local\armeabi\objs\SDL2\src\cpuinfo\
+* obj\local\armeabi\objs\SDL2\src\cpuinfo\SDL_cpuinfo.o
+* obj\local\armeabi\objs\SDL2\src\cpuinfo\SDL_cpuinfo.o.d
+* obj\local\armeabi\objs\SDL2\src\events\
+* obj\local\armeabi\objs\SDL2\src\events\SDL_clipboardevents.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_clipboardevents.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_dropevents.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_dropevents.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_events.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_events.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_gesture.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_gesture.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_keyboard.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_keyboard.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_mouse.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_mouse.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_quit.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_quit.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_touch.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_touch.o.d
+* obj\local\armeabi\objs\SDL2\src\events\SDL_windowevents.o
+* obj\local\armeabi\objs\SDL2\src\events\SDL_windowevents.o.d
+* obj\local\armeabi\objs\SDL2\src\file\
+* obj\local\armeabi\objs\SDL2\src\file\SDL_rwops.o
+* obj\local\armeabi\objs\SDL2\src\file\SDL_rwops.o.d
+* obj\local\armeabi\objs\SDL2\src\haptic\
+* obj\local\armeabi\objs\SDL2\src\haptic\SDL_haptic.o
+* obj\local\armeabi\objs\SDL2\src\haptic\SDL_haptic.o.d
+* obj\local\armeabi\objs\SDL2\src\haptic\dummy\
+* obj\local\armeabi\objs\SDL2\src\haptic\dummy\SDL_syshaptic.o
+* obj\local\armeabi\objs\SDL2\src\haptic\dummy\SDL_syshaptic.o.d
+* obj\local\armeabi\objs\SDL2\src\joystick\
+* obj\local\armeabi\objs\SDL2\src\joystick\SDL_gamecontroller.o
+* obj\local\armeabi\objs\SDL2\src\joystick\SDL_gamecontroller.o.d
+* obj\local\armeabi\objs\SDL2\src\joystick\SDL_joystick.o
+* obj\local\armeabi\objs\SDL2\src\joystick\SDL_joystick.o.d
+* obj\local\armeabi\objs\SDL2\src\joystick\android\
+* obj\local\armeabi\objs\SDL2\src\joystick\android\SDL_sysjoystick.o
+* obj\local\armeabi\objs\SDL2\src\joystick\android\SDL_sysjoystick.o.d
+* obj\local\armeabi\objs\SDL2\src\loadso\
+* obj\local\armeabi\objs\SDL2\src\loadso\dlopen\
+* obj\local\armeabi\objs\SDL2\src\loadso\dlopen\SDL_sysloadso.o
+* obj\local\armeabi\objs\SDL2\src\loadso\dlopen\SDL_sysloadso.o.d
+* obj\local\armeabi\objs\SDL2\src\power\
+* obj\local\armeabi\objs\SDL2\src\power\SDL_power.o
+* obj\local\armeabi\objs\SDL2\src\power\SDL_power.o.d
+* obj\local\armeabi\objs\SDL2\src\power\android\
+* obj\local\armeabi\objs\SDL2\src\power\android\SDL_syspower.o
+* obj\local\armeabi\objs\SDL2\src\power\android\SDL_syspower.o.d
+* obj\local\armeabi\objs\SDL2\src\render\
+* obj\local\armeabi\objs\SDL2\src\render\SDL_render.o
+* obj\local\armeabi\objs\SDL2\src\render\SDL_render.o.d
+* obj\local\armeabi\objs\SDL2\src\render\SDL_yuv_mmx.o
+* obj\local\armeabi\objs\SDL2\src\render\SDL_yuv_mmx.o.d
+* obj\local\armeabi\objs\SDL2\src\render\SDL_yuv_sw.o
+* obj\local\armeabi\objs\SDL2\src\render\SDL_yuv_sw.o.d
+* obj\local\armeabi\objs\SDL2\src\render\direct3d\
+* obj\local\armeabi\objs\SDL2\src\render\direct3d\SDL_render_d3d.o
+* obj\local\armeabi\objs\SDL2\src\render\direct3d\SDL_render_d3d.o.d
+* obj\local\armeabi\objs\SDL2\src\render\opengl\
+* obj\local\armeabi\objs\SDL2\src\render\opengl\SDL_render_gl.o
+* obj\local\armeabi\objs\SDL2\src\render\opengl\SDL_render_gl.o.d
+* obj\local\armeabi\objs\SDL2\src\render\opengl\SDL_shaders_gl.o
+* obj\local\armeabi\objs\SDL2\src\render\opengl\SDL_shaders_gl.o.d
+* obj\local\armeabi\objs\SDL2\src\render\opengles2\
+* obj\local\armeabi\objs\SDL2\src\render\opengles2\SDL_render_gles2.o
+* obj\local\armeabi\objs\SDL2\src\render\opengles2\SDL_render_gles2.o.d
+* obj\local\armeabi\objs\SDL2\src\render\opengles2\SDL_shaders_gles2.o
+* obj\local\armeabi\objs\SDL2\src\render\opengles2\SDL_shaders_gles2.o.d
+* obj\local\armeabi\objs\SDL2\src\render\opengles\
+* obj\local\armeabi\objs\SDL2\src\render\opengles\SDL_render_gles.o
+* obj\local\armeabi\objs\SDL2\src\render\opengles\SDL_render_gles.o.d
+* obj\local\armeabi\objs\SDL2\src\render\psp\
+* obj\local\armeabi\objs\SDL2\src\render\psp\SDL_render_psp.o
+* obj\local\armeabi\objs\SDL2\src\render\psp\SDL_render_psp.o.d
+* obj\local\armeabi\objs\SDL2\src\render\software\
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendfillrect.o
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendfillrect.o.d
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendline.o
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendline.o.d
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendpoint.o
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_blendpoint.o.d
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_drawline.o
+* obj\local\armeabi\objs\SDL2\src\render\software\SDL_drawline.o.d
+* obj\local\armeabi\objs\avcodec\
+* obj\local\armeabi\objs\avcodec\allcodecs.o
+* obj\local\armeabi\objs\avcodec\allcodecs.o.d
+* obj\local\armeabi\objs\avcodec\audioconvert.o
+* obj\local\armeabi\objs\avcodec\audioconvert.o.d
+* obj\local\armeabi\objs\avcodec\avpacket.o
+* obj\local\armeabi\objs\avcodec\avpacket.o.d
+* obj\local\armeabi\objs\avcodec\bitstream.o
+* obj\local\armeabi\objs\avcodec\bitstream.o.d
+* obj\local\armeabi\objs\avcodec\bitstream_filter.o
+* obj\local\armeabi\objs\avcodec\bitstream_filter.o.d
+* obj\local\armeabi\objs\avcodec\cabac.o
+* obj\local\armeabi\objs\avcodec\cabac.o.d
+* obj\local\armeabi\objs\avcodec\dsputil.o
+* obj\local\armeabi\objs\avcodec\dsputil.o.d
+* obj\local\armeabi\objs\avcodec\error_resilience.o
+* obj\local\armeabi\objs\avcodec\error_resilience.o.d
+* obj\local\armeabi\objs\avcodec\faanidct.o
+* obj\local\armeabi\objs\avcodec\faanidct.o.d
+* obj\local\armeabi\objs\avcodec\flvdec.o
+* obj\local\armeabi\objs\avcodec\flvdec.o.d
+* obj\local\armeabi\objs\avcodec\fmtconvert.o
+* obj\local\armeabi\objs\avcodec\fmtconvert.o.d
+* obj\local\armeabi\objs\avcodec\golomb.o
+* obj\local\armeabi\objs\avcodec\golomb.o.d
+* obj\local\armeabi\objs\avcodec\h263.o
+* obj\local\armeabi\objs\avcodec\h263.o.d
+* obj\local\armeabi\objs\avcodec\h263_parser.o
+* obj\local\armeabi\objs\avcodec\h263_parser.o.d
+* obj\local\armeabi\objs\avcodec\h263dec.o
+* obj\local\armeabi\objs\avcodec\h263dec.o.d
+* obj\local\armeabi\objs\avcodec\h264.o
+* obj\local\armeabi\objs\avcodec\h264.o.d
+* obj\local\armeabi\objs\avcodec\h264_cabac.o
+* obj\local\armeabi\objs\avcodec\h264_cabac.o.d
+* obj\local\armeabi\objs\avcodec\h264_cavlc.o
+* obj\local\armeabi\objs\avcodec\h264_cavlc.o.d
+* obj\local\armeabi\objs\avcodec\h264_direct.o
+* obj\local\armeabi\objs\avcodec\h264_direct.o.d
+* obj\local\armeabi\objs\avcodec\h264_loopfilter.o
+* obj\local\armeabi\objs\avcodec\h264_loopfilter.o.d
+* obj\local\armeabi\objs\avcodec\h264_ps.o
+* obj\local\armeabi\objs\avcodec\h264_ps.o.d
+* obj\local\armeabi\objs\avcodec\h264_refs.o
+* obj\local\armeabi\objs\avcodec\h264_refs.o.d
+* obj\local\armeabi\objs\avcodec\h264_sei.o
+* obj\local\armeabi\objs\avcodec\h264_sei.o.d
+* obj\local\armeabi\objs\avcodec\h264dsp.o
+* obj\local\armeabi\objs\avcodec\h264dsp.o.d
+* obj\local\armeabi\objs\avcodec\h264idct.o
+* obj\local\armeabi\objs\avcodec\h264idct.o.d
+* obj\local\armeabi\objs\avcodec\h264pred.o
+* obj\local\armeabi\objs\avcodec\h264pred.o.d
+* obj\local\armeabi\objs\avcodec\imgconvert.o
+* obj\local\armeabi\objs\avcodec\imgconvert.o.d
+* obj\local\armeabi\objs\avcodec\intelh263dec.o
+* obj\local\armeabi\objs\avcodec\intelh263dec.o.d
+* obj\local\armeabi\objs\avcodec\ituh263dec.o
+* obj\local\armeabi\objs\avcodec\ituh263dec.o.d
+* obj\local\armeabi\objs\avcodec\jrevdct.o
+* obj\local\armeabi\objs\avcodec\jrevdct.o.d
+* obj\local\armeabi\objs\avcodec\mjpeg.o
+* obj\local\armeabi\objs\avcodec\mjpeg.o.d
+* obj\local\armeabi\objs\avcodec\mjpegdec.o
+* obj\local\armeabi\objs\avcodec\mjpegdec.o.d
+* obj\local\armeabi\objs\avcodec\mpeg4video.o
+* obj\local\armeabi\objs\avcodec\mpeg4video.o.d
+* obj\local\armeabi\objs\avcodec\mpeg4video_parser.o
+* obj\local\armeabi\objs\avcodec\mpeg4video_parser.o.d
+* obj\local\armeabi\objs\avcodec\mpeg4videodec.o
+* obj\local\armeabi\objs\avcodec\mpeg4videodec.o.d
+* obj\local\armeabi\objs\avcodec\mpegvideo.o
+* obj\local\armeabi\objs\avcodec\mpegvideo.o.d
+* obj\local\armeabi\objs\avcodec\options.o
+* obj\local\armeabi\objs\avcodec\options.o.d
+* obj\local\armeabi\objs\avcodec\parser.o
+* obj\local\armeabi\objs\avcodec\parser.o.d
+* obj\local\armeabi\objs\avcodec\raw.o
+* obj\local\armeabi\objs\avcodec\raw.o.d
+* obj\local\armeabi\objs\avcodec\rawdec.o
+* obj\local\armeabi\objs\avcodec\rawdec.o.d
+* obj\local\armeabi\objs\avcodec\resample.o
+* obj\local\armeabi\objs\avcodec\resample.o.d
+* obj\local\armeabi\objs\avcodec\resample2.o
+* obj\local\armeabi\objs\avcodec\resample2.o.d
+* obj\local\armeabi\objs\avcodec\simple_idct.o
+* obj\local\armeabi\objs\avcodec\simple_idct.o.d
+* obj\local\armeabi\objs\avcodec\utils.o
+* obj\local\armeabi\objs\avcodec\utils.o.d
+* obj\local\armeabi\objs\avformat\
+* obj\local\armeabi\objs\avformat\allformats.o
+* obj\local\armeabi\objs\avformat\allformats.o.d
+* obj\local\armeabi\objs\avformat\avio.o
+* obj\local\armeabi\objs\avformat\avio.o.d
+* obj\local\armeabi\objs\avformat\aviobuf.o
+* obj\local\armeabi\objs\avformat\aviobuf.o.d
+* obj\local\armeabi\objs\avformat\cutils.o
+* obj\local\armeabi\objs\avformat\cutils.o.d
+* obj\local\armeabi\objs\avformat\id3v1.o
+* obj\local\armeabi\objs\avformat\id3v1.o.d
+* obj\local\armeabi\objs\avformat\id3v2.o
+* obj\local\armeabi\objs\avformat\id3v2.o.d
+* obj\local\armeabi\objs\avformat\metadata.o
+* obj\local\armeabi\objs\avformat\metadata.o.d
+* obj\local\armeabi\objs\avformat\options.o
+* obj\local\armeabi\objs\avformat\options.o.d
+* obj\local\armeabi\objs\avformat\os_support.o
+* obj\local\armeabi\objs\avformat\os_support.o.d
+* obj\local\armeabi\objs\avformat\riff.o
+* obj\local\armeabi\objs\avformat\riff.o.d
+* obj\local\armeabi\objs\avformat\sdp.o
+* obj\local\armeabi\objs\avformat\sdp.o.d
+* obj\local\armeabi\objs\avformat\seek.o
+* obj\local\armeabi\objs\avformat\seek.o.d
+* obj\local\armeabi\objs\avformat\utils.o
+* obj\local\armeabi\objs\avformat\utils.o.d
+* obj\local\armeabi\objs\avutil\
+* obj\local\armeabi\objs\avutil\adler32.o
+* obj\local\armeabi\objs\avutil\adler32.o.d
+* obj\local\armeabi\objs\avutil\aes.o
+* obj\local\armeabi\objs\avutil\aes.o.d
+* obj\local\armeabi\objs\avutil\audio_fifo.o
+* obj\local\armeabi\objs\avutil\audio_fifo.o.d
+* obj\local\armeabi\objs\avutil\audioconvert.o
+* obj\local\armeabi\objs\avutil\audioconvert.o.d
+* obj\local\armeabi\objs\avutil\avstring.o
+* obj\local\armeabi\objs\avutil\avstring.o.d
+* obj\local\armeabi\objs\avutil\base64.o
+* obj\local\armeabi\objs\avutil\base64.o.d
+* obj\local\armeabi\objs\avutil\bprint.o
+* obj\local\armeabi\objs\avutil\bprint.o.d
+* obj\local\armeabi\objs\avutil\cpu.o
+* obj\local\armeabi\objs\avutil\cpu.o.d
+* obj\local\armeabi\objs\avutil\crc.o
+* obj\local\armeabi\objs\avutil\crc.o.d
+* obj\local\armeabi\objs\avutil\des.o
+* obj\local\armeabi\objs\avutil\des.o.d
+* obj\local\armeabi\objs\avutil\dict.o
+* obj\local\armeabi\objs\avutil\dict.o.d
+* obj\local\armeabi\objs\avutil\error.o
+* obj\local\armeabi\objs\avutil\error.o.d
+* obj\local\armeabi\objs\avutil\eval.o
+* obj\local\armeabi\objs\avutil\eval.o.d
+* obj\local\armeabi\objs\avutil\fifo.o
+* obj\local\armeabi\objs\avutil\fifo.o.d
+* obj\local\armeabi\objs\avutil\file.o
+* obj\local\armeabi\objs\avutil\file.o.d
+* obj\local\armeabi\objs\avutil\imgutils.o
+* obj\local\armeabi\objs\avutil\imgutils.o.d
+* obj\local\armeabi\objs\avutil\intfloat_readwrite.o
+* obj\local\armeabi\objs\avutil\intfloat_readwrite.o.d
+* obj\local\armeabi\objs\avutil\inverse.o
+* obj\local\armeabi\objs\avutil\inverse.o.d
+* obj\local\armeabi\objs\avutil\lfg.o
+* obj\local\armeabi\objs\avutil\lfg.o.d
+* obj\local\armeabi\objs\avutil\lls.o
+* obj\local\armeabi\objs\avutil\lls.o.d
+* obj\local\armeabi\objs\avutil\log.o
+* obj\local\armeabi\objs\avutil\log.o.d
+* obj\local\armeabi\objs\avutil\lzo.o
+* obj\local\armeabi\objs\avutil\lzo.o.d
+* obj\local\armeabi\objs\avutil\mathematics.o
+* obj\local\armeabi\objs\avutil\mathematics.o.d
+* obj\local\armeabi\objs\avutil\md5.o
+* obj\local\armeabi\objs\avutil\md5.o.d
+* obj\local\armeabi\objs\avutil\mem.o
+* obj\local\armeabi\objs\avutil\mem.o.d
+* obj\local\armeabi\objs\avutil\opt.o
+* obj\local\armeabi\objs\avutil\opt.o.d
+* obj\local\armeabi\objs\avutil\parseutils.o
+* obj\local\armeabi\objs\avutil\parseutils.o.d
+* obj\local\armeabi\objs\avutil\pixdesc.o
+* obj\local\armeabi\objs\avutil\pixdesc.o.d
+* obj\local\armeabi\objs\avutil\random_seed.o
+* obj\local\armeabi\objs\avutil\random_seed.o.d
+* obj\local\armeabi\objs\avutil\rational.o
+* obj\local\armeabi\objs\avutil\rational.o.d
+* obj\local\armeabi\objs\avutil\rc4.o
+* obj\local\armeabi\objs\avutil\rc4.o.d
+* obj\local\armeabi\objs\avutil\samplefmt.o
+* obj\local\armeabi\objs\avutil\samplefmt.o.d
+* obj\local\armeabi\objs\avutil\sha.o
+* obj\local\armeabi\objs\avutil\sha.o.d
+* obj\local\armeabi\objs\avutil\timecode.o
+* obj\local\armeabi\objs\avutil\timecode.o.d
+* obj\local\armeabi\objs\avutil\tree.o
+* obj\local\armeabi\objs\avutil\tree.o.d
+* obj\local\armeabi\objs\avutil\utils.o
+* obj\local\armeabi\objs\avutil\utils.o.d
+* obj\local\armeabi\objs\ffmpeg\
+* obj\local\armeabi\objs\ffmpeg\NVPlayer.o
+* obj\local\armeabi\objs\ffmpeg\NVPlayer.o.d
+* obj\local\armeabi\objs\glesplayer\
+* obj\local\armeabi\objs\glesplayer\AudioDecoder.o
+* obj\local\armeabi\objs\glesplayer\AudioDecoder.o.d
+* obj\local\armeabi\objs\glesplayer\AudioQueueManager.o
+* obj\local\armeabi\objs\glesplayer\AudioQueueManager.o.d
+* obj\local\armeabi\objs\glesplayer\Functions.o
+* obj\local\armeabi\objs\glesplayer\Functions.o.d
+* obj\local\armeabi\objs\glesplayer\ImageManager.o
+* obj\local\armeabi\objs\glesplayer\ImageManager.o.d
+* obj\local\armeabi\objs\glesplayer\Main.o
+* obj\local\armeabi\objs\glesplayer\Main.o.d
+* obj\local\armeabi\objs\glesplayer\MainAPI.o
+* obj\local\armeabi\objs\glesplayer\MainAPI.o.d
+* obj\local\armeabi\objs\glesplayer\MediaPlayer.o
+* obj\local\armeabi\objs\glesplayer\MediaPlayer.o.d
+* obj\local\armeabi\objs\glesplayer\QueueManager.o
+* obj\local\armeabi\objs\glesplayer\QueueManager.o.d
+* obj\local\armeabi\objs\glesplayer\StringToSound.o
+* obj\local\armeabi\objs\glesplayer\StringToSound.o.d
+* obj\local\armeabi\objs\glesplayer\VideoPlayer.o
+* obj\local\armeabi\objs\glesplayer\VideoPlayer.o.d
+* obj\local\armeabi\objs\glesplayer\adpcm.o
+* obj\local\armeabi\objs\glesplayer\adpcm.o.d
+* obj\local\armeabi\objs\glesplayer\yuv420rgb565c.o
+* obj\local\armeabi\objs\glesplayer\yuv420rgb565c.o.d
+* obj\local\armeabi\objs\main\
+* obj\local\armeabi\objs\main\NVPlayer.o
+* obj\local\armeabi\objs\main\NVPlayer.o.d
+* obj\local\armeabi\objs\main\yuv2rgb16tab.o
+* obj\local\armeabi\objs\main\yuv2rgb16tab.o.d
+* obj\local\armeabi\objs\main\yuv420rgb565c.o
+* obj\local\armeabi\objs\main\yuv420rgb565c.o.d
+* obj\local\armeabi\objs\postproc\
+* obj\local\armeabi\objs\postproc\postprocess.o
+* obj\local\armeabi\objs\postproc\postprocess.o.d
+* obj\local\armeabi\objs\swscale\
+* obj\local\armeabi\objs\swscale\input.o
+* obj\local\armeabi\objs\swscale\input.o.d
+* obj\local\armeabi\objs\swscale\options.o
+* obj\local\armeabi\objs\swscale\options.o.d
+* obj\local\armeabi\objs\swscale\output.o
+* obj\local\armeabi\objs\swscale\output.o.d
+* obj\local\armeabi\objs\swscale\rgb2rgb.o
+* obj\local\armeabi\objs\swscale\rgb2rgb.o.d
+* obj\local\armeabi\objs\swscale\swscale.o
+* obj\local\armeabi\objs\swscale\swscale.o.d
+* obj\local\armeabi\objs\swscale\swscale_unscaled.o
+* obj\local\armeabi\objs\swscale\swscale_unscaled.o.d
+* obj\local\armeabi\objs\swscale\utils.o
+* obj\local\armeabi\objs\swscale\utils.o.d
+* obj\local\armeabi\objs\swscale\yuv2rgb.o
+* obj\local\armeabi\objs\swscale\yuv2rgb.o.d
+* obj\local\armeabi\objs\zerolink\
+* obj\local\armeabi\objs\zerolink\libzerolink.o
+* obj\local\armeabi\objs\zerolink\libzerolink.o.d
+* obj\local\armeabi\objs\zerolink\libzerolink_jni.o
+* obj\local\armeabi\objs\zerolink\libzerolink_jni.o.d
+* proguard-project.txt
+* zxing.jar
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\armeabi\libffmpeg.so => app\src\main\jniLibs\armeabi\libffmpeg.so
+* libs\armeabi\libglesplayer.so => app\src\main\jniLibs\armeabi\libglesplayer.so
+* libs\armeabi\libzerolink.so => app\src\main\jniLibs\armeabi\libzerolink.so
+* libs\nvsdk_1.3.jar => app\libs\nvsdk_1.3.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

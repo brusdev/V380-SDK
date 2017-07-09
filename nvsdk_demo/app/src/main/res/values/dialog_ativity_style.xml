@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TANCStyle" parent="@android:style/Theme.Dialog">
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@drawable/selector_dialog_bg</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 更改对话框标题栏 
+        <item name="android:windowTitleStyle">@style/TitleStyle</item> -->
+    </style>
+   <!--  <style name="TitleStyle" parent="@android:style/DialogWindowTitle">
+        <item name="android:textAppearance">@style/TitleText</item>
+    </style>  -->
+    <style name="TitleText" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <!-- 设置Dialog标题栏文字颜色。 -->
+        <item name="android:textColor">#000</item>
+    </style>
+</resources> 

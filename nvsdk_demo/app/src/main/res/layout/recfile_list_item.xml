@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        android:id="@+id/recFileListItem" 
+        android:layout_width="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="vertical"
+        android:descendantFocusability= "blocksDescendants"
+        android:background="@null"
+	>
+	 
+	 <LinearLayout android:layout_width="match_parent" android:layout_height="50dip"  android:layout_weight="2" android:gravity="center" android:orientation="horizontal">
+		<TextView android:text="@string/nameHint" android:paddingLeft="15dip" android:layout_width="0dip" android:layout_weight="4" android:layout_height="fill_parent" android:textSize="14sp" android:textColor="#222222" android:id="@+id/ItemFileName" android:background="@null" android:gravity="left|center" android:maxLines="1" />
+		<TextView android:id="@+id/tvTimeLen" android:text="@string/nameHint"  android:layout_width="0dip" android:layout_weight="3" android:layout_height="fill_parent" android:textSize="14sp" android:textColor="#222222" android:background="@null" android:gravity="left|center" android:maxLines="1" />
+	 	<TextView android:id="@+id/tvSize" android:text="@string/nameHint"  android:layout_width="0dip" android:layout_weight="3" android:layout_height="fill_parent" android:textSize="14sp" android:textColor="#222222" android:background="@null" android:gravity="left|center" android:maxLines="1" />
+	 </LinearLayout>
+	
+		<TextView android:layout_weight="1"  android:paddingLeft="15dip" android:text="@string/nameHint" android:layout_height="0dip" android:textSize="10sp" android:textColor="#f81ac6" android:layout_width="match_parent" android:id="@+id/ItemFileInfo" android:background="@null" android:gravity="left|center"  android:maxLines="2" />
+	 <LinearLayout android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/background_gray" />
+</LinearLayout>
